@@ -1,13 +1,16 @@
-#include "main.h"
+#incude "main.h"
 
 /**
- * jack_bauer - Prints every minute of the day of
- *              Jack Bauer, starting from 00:00 to 23:59.
+ * main - Write a function that prints every minute of the day
+ *
+ * n from 00:00 to 23:59, min loop counts mins...
+ * Return: 0
  */
 void jack_bauer(void)
 {
 	int hour, minute;
-for (hour = 0; hour <= 23; hour++)
+
+	for (hour = 0; hour <= 23; hour++)
 	{
 		for (minute = 0; minute <= 59; minute++)
 		{
