@@ -1,29 +1,26 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * print_triangle - Prints a triangle, using the character #.
- * @size: The size of the triangle.
+ * main - Finds and prints the largest prime
+ *        factor of the number 612852475143.
+ *
+ * Return: Always 0.
  */
-void print_triangle(int size)
+int main(void)
 {
-	int hash, index;
-
-	if (size > 0)
-	{
-		for (hash = 1; hash <= size; hash++)
-		{
-			for (index = size - hash; index > 0; index--)
-				_putchar(' ');
-
-			for (index = 0; index < hash; index++)
-				_putchar('#');
-
-			if (hash == size)
-				continue;
-
-			_putchar('\n');
-		}
-	}
-
-	_putchar('\n');
+        long prime = 612852475143, div;
+        while (div < (prime / 2))
+        {
+                if ((prime % 2) == 0)
+                {
+                        prime /= 2;
+                        continue;
+                }
+                for (div = 3; div < (prime / 2); div += 2)
+                {
+                        if ((prime % div) == 0)
+                                prime /= div;
+                }
+        }
+        printf("%ld\n", prime);
+        return (0);
 }
