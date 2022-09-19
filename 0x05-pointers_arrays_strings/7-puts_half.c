@@ -1,25 +1,35 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 
 /**
- * print_array - Prints an inputted number of elements
- *               of an array of integers.
- * @a: The array of integers.
- * @n: The number of elements to be printed.
+ * puts_half - prints a string
+ * @str: string to print
+ *
+ * Return: nothing
  */
-void print_array(int *a, int n)
+
+void puts_half(char *str)
 {
-	int index;
+	int i, len = _strlen(str);
 
-	for (index = 0; index < n; index++)
-	{
-		printf("%d", a[index]);
+	for (i = ((len - 1) / 2) + 1; i < len; i++)
+		putchar(*(str + i));
+	putchar(10);
+}
 
-		if (index == n - 1)
-			continue;
+/**
+* _strlen - returns the length of a string
+* @s: string
+*
+* Return: the length of the given string
+*/
 
-		printf(", ");
-	}
+int _strlen(char *s)
+{
+	int len = 0;
 
-	printf("\n");
+	while (*(s + len) != '\0')
+		len++;
+
+	return (len);
 }
