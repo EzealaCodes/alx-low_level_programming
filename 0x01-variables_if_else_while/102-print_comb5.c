@@ -1,13 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - Print possible conbination of digits 0 - 99
+ * main - Prints all possible combinations of two two-digit numbers,
+ *        ranging from 0-99, separated by a comma followed by a space.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	int num1, num2;
+        int num1, num2;
 
 	for (num1 = 0; num1 <= 98; num1++)
 	{
@@ -21,7 +22,7 @@ int main(void)
 
 			if (num1 == 98 && num2 == 99)
 				continue;
-			
+
 			putchar(',');
 			putchar(' ');
 		}
