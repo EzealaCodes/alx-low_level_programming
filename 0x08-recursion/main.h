@@ -1,11 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-/**
- *void prototypes()
- *int prototypes()
- *char prototypes()
- */
+#include <stdio.h>
 
 void _puts_recursion(char *s);
 void _print_rev_recursion(char *s);
@@ -16,5 +12,8 @@ int _sqrt_recursion(int n);
 int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
+int _putchar(char c);
+int is_prime(int n, int start);
+void check(char *s, int start, int end, int *flag);
 
-#endif
+#endif /*MAIN_H*/
