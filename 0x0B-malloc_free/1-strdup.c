@@ -1,4 +1,3 @@
-lines (26 sloc)  707 Bytes
 #include "main.h"
 #include <stdlib.h>
 
