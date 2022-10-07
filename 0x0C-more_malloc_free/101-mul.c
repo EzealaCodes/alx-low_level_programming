@@ -1,20 +1,3 @@
-
-Maryjanechidinma
-/
-alx-low_level_programming
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-alx-low_level_programming/0x0C-more_malloc_free/101-mul.c
-@Maryjanechidinma
-Maryjanechidinma 101-mul.c
- 1 contributor
-232 lines (194 sloc)  4.56 KB
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -65,7 +48,7 @@ char *create_xarray(int size)
 
 	array[index] = '\0';
 
-	return (array);
+return (array);
 }
 
 /**
@@ -215,7 +198,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (*(argv[1]) == '0')
+if (*(argv[1]) == '0')
 		argv[1] = iterate_zeroes(argv[1]);
 	if (*(argv[2]) == '0')
 		argv[2] = iterate_zeroes(argv[2]);
