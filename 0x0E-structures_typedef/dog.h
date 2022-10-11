@@ -1,21 +1,31 @@
-#ifndef DOG_H_FILE
-#define DOG_H_FILE
+#include <stdio.h>
+
+#include "dog.h"
+
+
 
 /**
- * struct dog - structure definition of a dog
- * @name: dog name
- * @age: dog age
- * @owner: owner
- */
-typedef struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-} dog_t;
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-void print_dog(struct dog *d);
-dog_t *new_dog(char *name, float age, char *owner);
-void free_dog(dog_t *d);
-#endif
+ * main - check the code for Holberton School students.
+
+ *
+
+ * Return: Always 0.
+
+ */
+
+int main(void)
+
+{
+
+  struct dog my_dog;
+
+
+
+  init_dog(&my_dog, "Django", 3.5, "Jay");
+
+  printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+
+  return (0);
+
+}
