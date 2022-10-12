@@ -1,12 +1,13 @@
-#include <stdio.h>
+#ifndef PI_H
+#define PI_H
 
-/**
- * main - prints the name of the file
- *
- * Return: always 0
+/*
+ * File: 1-pi.h
+ * Auth: Brennan D Baraban
+ * Desc: Header file that defines a macro named PI
+ *       as an abbreviation for the token 3.14159265359.
  */
-int main(void)
-{
-	printf("%s\n", _FILE_);
-	return (0);
-}
+
+#define PI 3.14159265359
+
+#endif
